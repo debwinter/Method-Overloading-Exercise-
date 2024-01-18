@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine($"5 + 3 = {Add(5,3)}");
+            Console.WriteLine();
+            Console.WriteLine($"5.2 + 3.5 = {Add(5.2m, 3.5m)}");
+            Console.WriteLine();
+            Console.WriteLine($"5 dollars + 3 dollars = {Add(5, 3, true)}");
+            Console.WriteLine($"1 dollar + 0 dollars = {Add(1, 0, true)}");
         }
 
         public static int Add(int a, int b)
